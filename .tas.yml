@@ -1,0 +1,15 @@
+---
+framework: "mocha"
+postMerge:
+    pattern:
+    - "./test/api/*.ts"
+    - "./test/validation/**/*.ts"
+preMerge:
+    pattern:
+    - "./test/api/*.ts"
+    - "./test/validation/**/*.ts"
+preRun:
+    - yarn install                   # Mention pre-run steps here
+postRun:
+    - yarn --version
+version: 2.0

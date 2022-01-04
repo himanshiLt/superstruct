@@ -2,12 +2,10 @@ framework: mocha
 tier: xlarge
 postMerge:
   pattern:
-    - "./test/api/*.ts"
-    - "./test/validation/**/*.ts"
+    - "./test/index.ts"
 preMerge:
   pattern:
-    - "./test/api/*.ts"
-    - "./test/validation/**/*.ts"
+    - "./test/index.ts"
 preRun:
      command:
         - yarn install

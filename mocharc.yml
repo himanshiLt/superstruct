@@ -1,3 +1,3 @@
 require:
-  - ./test/register.cjs
+  - test/register.cjs
   - source-map-support/register
